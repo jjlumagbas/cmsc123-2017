@@ -2,10 +2,10 @@
 
 ```
 +-------------+           +-------------+
-|Book         |           |Date         |
-+-------------+           +-------------+
-|String author|           |int month    |
-|Date pubDate +----------->int day      |
+|Book         |      +--->|Date         |
++-------------+      |    +-------------+
+|String author|      |    |int month    |
+|Date pubDate +------+    |int day      |
 |             |           |int year     |
 |             |           |             |
 |             |           |             |
