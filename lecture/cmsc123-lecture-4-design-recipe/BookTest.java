@@ -11,8 +11,8 @@ public class BookTest extends TestCase {
     Author hawking = new Author("Stephen Hawking", "M");
     Author rowling = new Author("J.K. Rowling", "F");
     
-    Book time = new Book(hawking, "A Brief History of Time");
-    Book stone = new Book(rowling, "The Sorcerer's Stone");
+    Book time = new Book(hawking, "A Brief History of Time", 1988);
+    Book stone = new Book(rowling, "The Philosophers's Stone",  1997);
     
     assertEquals(false, time.sameAuthor(stone));
   }
@@ -20,8 +20,8 @@ public class BookTest extends TestCase {
   public void testSameAuthorNotSame() {
     Author rowling = new Author("J.K. Rowling", "F");
     
-    Book stone = new Book(rowling, "The Sorcerer's Stone");
-    Book secrets = new Book(rowling, "The Chamber of Secrets");
+    Book stone = new Book(rowling, "The Philosophers's Stone", 1997);
+    Book secrets = new Book(rowling, "The Chamber of Secrets", 1998);
     
     assertEquals(true, secrets.sameAuthor(stone));
   }

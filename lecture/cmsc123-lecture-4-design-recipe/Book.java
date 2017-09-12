@@ -1,10 +1,12 @@
 class Book {
   Author author;
   String title;
+  int year;  // published
   
-  Book(Author author, String title) {
+  Book(Author author, String title, int year) {
     this.author = author;
     this.title = title;
+    this.year = year;
   }
   
   // TEMPLATE
@@ -33,4 +35,10 @@ class Book {
      *    that.title
      */
   }
+ 
+  
+  // TODO design a function publishedBefore that accepts a Book and
+  //   returns true if this Book was published before the other 
+  
+  
 }
