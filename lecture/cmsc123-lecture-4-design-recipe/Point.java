@@ -26,6 +26,6 @@ class Point {
   // Produces a new point that is a translation of this Point
   // given a distance x and y
   Point translate(int x, int y) {
-    return new Point(this.x + x, this.x + y);
+    return new Point(this.x + x, this.y + y);
   }
 }
